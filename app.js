@@ -1,22 +1,26 @@
-import jokes from './scripts/random.js'
+import random from './scripts/random.js'
 
 const routing = async()=> {
+    let jokes= new random()
     let url = window.location.hash;
     let adress = url.split('/')[1];
     let body = document.getElementById("body")
     if (adress === "rand") {
-        body.innerHTML= `<section class="section"><h1>  </h1></section>`
+        await jokes.forConstruction()
+        body.innerHTML=jokes.urlGenerator();
+        var selectElement = document.getElementById("selectElement")
+        selectElement.addEventListener('change', jokes.getJoke );
     }
     else {
-        if (adress === "contactus") {
+        if (adress === "search") {
             body.innerHTML = `
         <section class="section">
             <h1> Contact Us </h1>
         </section>
     `
         }
-        else {
-            list.for_dropdown()
+        if(url=="") {
+            body.innerHTML="  "
         }
     }
 }
