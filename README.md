@@ -16,3 +16,11 @@ task 1- create the prototype of the website
 task 2- Fix all the issues
 
 task 3- Somehow make it beutiful
+
+------------------------------------------------------------------------------------------------------
+
+So this is the text after the test,
+
+I'd like to state that this is unaccaptable work that I did, and I did not plan to fail this test this miserably. If I have the opportunity to continue the intership, I'd like to spend some time with you to fully understand how fetch works, and I have never had experience with working with calling js in html.
+
+I think that's it: Have nice day
