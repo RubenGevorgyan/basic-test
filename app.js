@@ -7,7 +7,7 @@ const routing = async()=> {
     let body = document.getElementById("body")
     if (adress === "rand") {
         await jokes.forConstruction()
-        body.innerHTML=jokes.urlGenerator();
+        body.innerHTML=jokes.htmlGenerator();
         var selectElement = document.getElementById("selectElement")
         selectElement.addEventListener('change', jokes.getJoke );
     }

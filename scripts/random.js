@@ -19,7 +19,7 @@ class jokes{
         document.getElementById("body")=this.html
     }
 
-    urlGenerator(){
+    htmlGenerator(){
         this.body = document.getElementById("body")
         this.html = '<select id="selectElement">'
         this.categories.forEach(category => {
